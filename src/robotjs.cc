@@ -339,6 +339,9 @@ static KeyNames key_names[] =
 	{ "insert",         K_INSERT },
 	{ "menu",           K_MENU },
 	{ "right_menu",     K_RIGHT_MENU },
+	{ "ä",     K_AE },
+	{ "ö",     K_OE },
+	{ "ü",     K_UE },
 
 	{ "audio_mute",     K_AUDIO_VOLUME_MUTE },
 	{ "audio_vol_down", K_AUDIO_VOLUME_DOWN },

@@ -5,7 +5,7 @@
 #include "os.h"
 
 #ifdef __cplusplus
-extern "C" 
+extern "C"
 {
 #endif
 
@@ -14,7 +14,7 @@ extern "C"
 #include <Carbon/Carbon.h> /* Really only need <HIToolbox/Events.h> */
 #include <ApplicationServices/ApplicationServices.h>
 #import <IOKit/hidsystem/ev_keymap.h>
-	
+
 enum _MMKeyCode {
 	K_NOT_A_KEY = 9999,
 	K_BACKSPACE = kVK_Delete,
@@ -68,6 +68,9 @@ enum _MMKeyCode {
 	K_PRINTSCREEN = K_NOT_A_KEY,
 	K_MENU = K_NOT_A_KEY,
 	K_RIGHT_MENU = K_NOT_A_KEY,
+	K_OE = kVK_ANSI_Semicolon,
+	K_AE = kVK_ANSI_Quote,
+	K_UE = kVK_ANSI_LeftBracket,
 
 	K_NUMPAD_LOCK = K_NOT_A_KEY,
 	K_NUMPAD_0 = kVK_ANSI_Keypad0,
@@ -166,6 +169,9 @@ enum _MMKeyCode {
 	K_PRINTSCREEN = XK_Print,
 	K_MENU = K_NOT_A_KEY,
 	K_RIGHT_MENU = K_NOT_A_KEY,
+	K_OE = K_NOT_A_KEY,
+	K_AE = K_NOT_A_KEY,
+	K_UE = K_NOT_A_KEY,
 
 	K_NUMPAD_LOCK = K_NOT_A_KEY,
 	K_NUMPAD_0 = K_NOT_A_KEY,
@@ -261,6 +267,9 @@ enum _MMKeyCode {
 	K_INSERT = VK_INSERT,
 	K_MENU = VK_APPS,
 	K_RIGHT_MENU = VK_RMENU,
+	K_OE = VK_OEM_3,
+	K_AE = VK_OEM_7,
+	K_UE = VK_OEM_1,
 
 	K_NUMPAD_LOCK = VK_NUMLOCK,
 	K_NUMPAD_0 = VK_NUMPAD0,
